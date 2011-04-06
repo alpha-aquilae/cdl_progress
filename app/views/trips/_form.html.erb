@@ -2,7 +2,7 @@
 <table summary="Subject form fields">
   <tr>
     <th><%= f.label(:cdl_id) %></th>
-    <td><%= f.select(:cdl_name, Cdl.all.collect {|a| [a.name, a.id]}) %></td>
+    <td><%= f.select(:cdl_id, Cdl.all.collect {|a| [a.name, a.id]}) %></td>
   </tr>
     <th><%= f.label(:cdl_name) %></th>
     <td><%= f.select(:cdl_name, Cdl.all.collect {|a| [a.name, a.id]}) %></td>
