@@ -20,7 +20,7 @@ a.actiony { width: 760px; text-align: center; color: white;}
 a.actiony:hover {text-decoration: none}
 
 /* small action buttons */
-.actions { width: 160px;}
+.actions { width: 50px;}
 .actions a.action { float: left; min-width: 3.5em; 
   padding: 1px 2px; margin: 2px 5px; font-size: 0.7em; }
 
@@ -32,10 +32,10 @@ a.actiony:hover {text-decoration: none}
 
 .list table { clear: both; width: 100%; }
 .list table tr td { border: 1px solid #666666; }
-.show table { clear: both; margin: 0 200px; width: 300px; }
+.show table { clear: both; margin: 0 200px; width: 150px;}
 .show table.wide { width: 600px; margin: 0 50px; }
 .show table tr th { white-space: nowrap; padding-right: 5px;}
-.show table tr td { border: 1px solid #666666; }
+.show table tr td { solid #666666; }
 .edit table, .new table { margin: 0 auto; }
 
 .odd { background: #E5CE69; }

@@ -3,14 +3,14 @@
 <html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>apps_for(dillon) | <%= @page_title || 'Admin Area' %></title>
+    <title><%= @page_title || 'Admin Area' %></title>
     <meta name="author" content="Dillon Hafer">
     <%= stylesheet_link_tag('public', 'admin', :media => 'all') %>
     <%= javascript_include_tag('application') %>
   </head>
   <body>
     <div id="header">
-      <h1><%= link_to("apps_for(dillon)", {:controller => 'cdls', :action => 'list'}, :class => 'actiony') %></h1>
+      <h1><%= link_to("Division 2", {:controller => 'cdls', :action => 'list'}, :class => 'actiony') %></h1>
     </div>
     <div id="main">
       <% if !flash[:notice].blank? %>
