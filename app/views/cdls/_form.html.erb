@@ -9,10 +9,6 @@
     <td><%= f.select(:position, 1..@cdl_count ) %></td>
   </tr>
   <tr>
-    <th><%= f.label(:physical) %></th>
-    <td><%= f.check_box(:physical) %></td>
-  </tr>
-  <tr>
     <th><%= f.label(:general_knowledge) %></th>
     <td><%= f.check_box(:general_knowledge) %></td>
   </tr>
@@ -27,6 +23,10 @@
   <tr>
     <th><%= f.label(:school) %></th>
     <td><%= f.check_box(:school) %></td>
+  </tr>
+  <tr>
+    <th><%= f.label(:physical) %></th>
+    <td><%= f.check_box(:physical) %></td>
   </tr>
   <tr>
     <th><%= f.label(:skills_test) %></th>
