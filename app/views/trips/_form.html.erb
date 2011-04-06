@@ -1,6 +1,12 @@
 <%= error_messages_for(@trip) %>
 <table summary="Subject form fields">
   <tr>
+    <th><%= f.label(:cdl_id) %></th>
+    <td><%= f.select(:cdl_name, Cdl.all.collect {|a| [a.name, a.id]}) %></td>
+  </tr>
+    <th><%= f.label(:cdl_name) %></th>
+    <td><%= f.select(:cdl_name, Cdl.all.collect {|a| [a.name, a.id]}) %></td>
+  </tr>
     <th><%= f.label(:empty_1) %></th>
     <td><%= f.check_box(:empty_1) %></td>
   </tr>
