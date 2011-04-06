@@ -5,7 +5,7 @@
     <td><%= f.select(:cdl_id, Cdl.all.collect {|a| [a.name, a.id]}) %></td>
   </tr>
     <th><%= f.label(:cdl_name) %></th>
-    <td><%= f.select(:cdl_name, Cdl.all.collect {|a| [a.name, a.id]}) %></td>
+    <td><%= f.select(:cdl_name, Cdl.all.collect {|a| [a.name, a.name]}) %></td>
   </tr>
     <th><%= f.label(:empty_1) %></th>
     <td><%= f.check_box(:empty_1) %></td>
